@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carta del día · Casa Roble</title>
+<meta name="description" content="La carta de Casa Roble cambia cada martes según lo que haya en el mercado. Consulta los platos de esta semana.">
+<meta name="theme-color" content="#f4efe6">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css?v=20260903">
+</head>
+<body class="pagina-carta">
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<div class="cursor" data-cursor aria-hidden="true">
+  <span class="cursor-dot"></span>
+  <span class="cursor-ring"></span>
+</div>
+
+<header class="nav is-solida" data-nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <span class="nav-logo-mark">CR</span>
+      <span class="nav-logo-text">Casa Roble</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="index.html#manifiesto">La casa</a>
+      <a href="index.html#visita">Visitarnos</a>
+    </nav>
+    <a class="btn btn-solid nav-cta" href="index.html#reserva">Reservar mesa</a>
+  </div>
+</header>
+
+<main id="contenido" class="carta">
+
+  <header class="carta-cabeza">
+    <p class="kicker">Casa Roble · Carta de la semana</p>
+    <h1 class="carta-titulo" data-split="words">La carta <em>de hoy</em>.</h1>
+    <p class="carta-nota reveal">
+      Cambia cada martes. Si un plato desaparece es porque se acabó el producto,
+      no porque nos hayamos cansado de él. Precios en dólares, impuesto incluido.
+    </p>
+    <p class="carta-fecha reveal">Actualizada el <time datetime="2026-09-01">1 de septiembre</time></p>
+  </header>
+
+  <div class="filtros" data-filtros>
+    <button class="chip is-activo" type="button" data-filtro="todo">Todo</button>
+    <button class="chip" type="button" data-filtro="empezar">Para empezar</button>
+    <button class="chip" type="button" data-filtro="principal">Principales</button>
+    <button class="chip" type="button" data-filtro="postre">Postres</button>
+    <button class="chip" type="button" data-filtro="bebida">Bebidas</button>
+    <button class="chip chip-alt" type="button" data-filtro="vegetariano">Vegetariano</button>
+  </div>
+
+  <section class="carta-bloque" data-categoria="empezar">
+    <h2 class="carta-cat">Para empezar</h2>
+    <ul class="carta-lista">
+      <li class="carta-item" data-cat="empezar">
+        <div class="carta-item-txt">
+          <h3>Pan de maíz nuevo</h3>
+          <p>Recién hecho, mantequilla batida de culantro.</p>
+        </div>
+        <span class="carta-precio">$6.00</span>
+      </li>
+      <li class="carta-item" data-cat="empezar" data-tags="vegetariano">
+        <div class="carta-item-txt">
+          <h3>Yuca frita, alioli de ajo asado <span class="etiqueta etiqueta-veg">Veg</span></h3>
+          <p>Crujiente por fuera, cremosa por dentro.</p>
+        </div>
+        <span class="carta-precio">$8.00</span>
+      </li>
+      <li class="carta-item" data-cat="empezar">
+        <div class="carta-item-txt">
+          <h3>Ceviche del día <span class="etiqueta etiqueta-picante">Picante</span></h3>
+          <p>Leche de tigre suave, cebolla morada, camote asado.</p>
+        </div>
+        <span class="carta-precio">$12.50</span>
+      </li>
+      <li class="carta-item" data-cat="empezar" data-tags="vegetariano">
+        <div class="carta-item-txt">
+          <h3>Tomate de temporada y albahaca <span class="etiqueta etiqueta-veg">Veg</span></h3>
+          <p>De la huerta de Cerro Punta, aceite de oliva y sal en escamas.</p>
+        </div>
+        <span class="carta-precio">$10.00</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="carta-bloque" data-categoria="principal">
+    <h2 class="carta-cat">Principales</h2>
+    <ul class="carta-lista">
+      <li class="carta-item" data-cat="principal">
+        <div class="carta-item-txt">
+          <h3>Corvina a la brasa</h3>
+          <p>Envuelta en hoja de plátano, mojo de naranja agria.</p>
+        </div>
+        <span class="carta-precio">$24.00</span>
+      </li>
+      <li class="carta-item" data-cat="principal">
+        <div class="carta-item-txt">
+          <h3>Pesca del día</h3>
+          <p>Lo que haya traído el barco. Pregunte a sala.</p>
+        </div>
+        <span class="carta-precio carta-precio-var">Precio de mercado</span>
+      </li>
+      <li class="carta-item" data-cat="principal" data-tags="vegetariano">
+        <div class="carta-item-txt">
+          <h3>Arroz cremoso de hongos <span class="etiqueta etiqueta-veg">Veg</span></h3>
+          <p>Hongos de Boquete, queso curado de cabra, aceite de perejil.</p>
+        </div>
+        <span class="carta-precio">$19.00</span>
+      </li>
+      <li class="carta-item" data-cat="principal">
+        <div class="carta-item-txt">
+          <h3>Costilla braseada ocho horas</h3>
+          <p>Puré de ñame, encurtido de cebolla morada.</p>
+        </div>
+        <span class="carta-precio">$26.00</span>
+      </li>
+      <li class="carta-item" data-cat="principal">
+        <div class="carta-item-txt">
+          <h3>Pollo de campo al carbón</h3>
+          <p>Media pieza, mojo de naranja, papas a la brasa.</p>
+        </div>
+        <span class="carta-precio">$21.00</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="carta-bloque" data-categoria="postre">
+    <h2 class="carta-cat">Postres</h2>
+    <ul class="carta-lista">
+      <li class="carta-item" data-cat="postre">
+        <div class="carta-item-txt">
+          <h3>Tres leches de maracuyá</h3>
+          <p>El que nunca hemos podido quitar de la carta.</p>
+        </div>
+        <span class="carta-precio">$8.00</span>
+      </li>
+      <li class="carta-item" data-cat="postre" data-tags="vegetariano">
+        <div class="carta-item-txt">
+          <h3>Helado de tamarindo <span class="etiqueta etiqueta-veg">Veg</span></h3>
+          <p>Hecho en casa, dos bolas.</p>
+        </div>
+        <span class="carta-precio">$6.50</span>
+      </li>
+      <li class="carta-item" data-cat="postre">
+        <div class="carta-item-txt">
+          <h3>Bizcocho tibio de chocolate 70%</h3>
+          <p>Con crema agria y sal.</p>
+        </div>
+        <span class="carta-precio">$9.00</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="carta-bloque" data-categoria="bebida">
+    <h2 class="carta-cat">Bebidas</h2>
+    <ul class="carta-lista">
+      <li class="carta-item" data-cat="bebida" data-tags="vegetariano">
+        <div class="carta-item-txt">
+          <h3>Chicha de piña fermentada <span class="etiqueta etiqueta-veg">Veg</span></h3>
+          <p>Fermentación de tres días, poco dulce.</p>
+        </div>
+        <span class="carta-precio">$5.00</span>
+      </li>
+      <li class="carta-item" data-cat="bebida">
+        <div class="carta-item-txt">
+          <h3>Vino de la casa</h3>
+          <p>Tinto o blanco, por copa. Pregunte por la botella del mes.</p>
+        </div>
+        <span class="carta-precio">$7.00</span>
+      </li>
+      <li class="carta-item" data-cat="bebida" data-tags="vegetariano">
+        <div class="carta-item-txt">
+          <h3>Café de Boquete, filtrado <span class="etiqueta etiqueta-veg">Veg</span></h3>
+          <p>Tueste medio, molido al momento.</p>
+        </div>
+        <span class="carta-precio">$4.00</span>
+      </li>
+      <li class="carta-item" data-cat="bebida" data-tags="vegetariano">
+        <div class="carta-item-txt">
+          <h3>Agua de pipa <span class="etiqueta etiqueta-veg">Veg</span></h3>
+          <p>Fría, del día.</p>
+        </div>
+        <span class="carta-precio">$3.50</span>
+      </li>
+    </ul>
+  </section>
+
+  <p class="carta-vacio" data-vacio hidden>No hay platos en esta selección.</p>
+
+  <footer class="carta-pie">
+    <p>
+      Si tiene alguna alergia o intolerancia, dígalo al reservar o al sentarse.
+      Adaptamos casi todo con un poco de aviso.
+    </p>
+    <a class="btn btn-solid" href="index.html#reserva">Reservar mesa</a>
+    <p class="carta-volver"><a class="enlace-sub" href="index.html">← Volver al inicio</a></p>
+  </footer>
+
+</main>
+
+<script defer src="lib/gsap.min.js"></script>
+<script defer src="lib/ScrollTrigger.min.js"></script>
+<script defer src="lib/manifest.js?v=20260903"></script>
+<script defer src="main.js?v=20260903"></script>
+</body>
+</html>

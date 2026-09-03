@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa Roble · Cocina de mercado en el Casco Antiguo</title>
+<meta name="description" content="Casa Roble es una cocina pequeña que compra cada mañana en el mercado y escribe la carta después. Reservas, carta del día y horarios.">
+<meta name="theme-color" content="#f4efe6">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Casa Roble · Cocina de mercado">
+<meta property="og:description" content="Compramos por la mañana, escribimos la carta al mediodía.">
+<meta property="og:image" content="assets/img/og-portada.webp">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;500;600&display=swap">
+<link rel="preload" as="image" href="assets/img/mano-masa.webp" fetchpriority="high">
+<link rel="stylesheet" href="styles.css?v=20260903">
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<div class="splash" data-splash aria-hidden="true">
+  <span class="splash-mark">Casa&nbsp;Roble</span>
+</div>
+
+<div class="cursor" data-cursor aria-hidden="true">
+  <span class="cursor-dot"></span>
+  <span class="cursor-ring"></span>
+</div>
+
+<header class="nav" data-nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <span class="nav-logo-mark">CR</span>
+      <span class="nav-logo-text">Casa Roble</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#manifiesto">La casa</a>
+      <a href="#platos">Del mercado</a>
+      <a href="carta.html">Carta</a>
+      <a href="#visita">Visitarnos</a>
+    </nav>
+
+    <a class="btn btn-solid nav-cta" href="#reserva">Reservar mesa</a>
+
+    <button class="nav-burger" type="button" data-burger aria-expanded="false" aria-controls="menu-movil">
+      <span></span><span></span>
+      <span class="sr-only">Abrir menú</span>
+    </button>
+  </div>
+</header>
+
+<div class="menu-movil" id="menu-movil" data-menu-movil hidden>
+  <a href="#manifiesto">La casa</a>
+  <a href="#platos">Del mercado</a>
+  <a href="carta.html">Carta</a>
+  <a href="#visita">Visitarnos</a>
+  <a href="#reserva">Reservar mesa</a>
+</div>
+
+<main id="contenido">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-texto">
+        <p class="kicker">Cocina de mercado · Casco Antiguo · Desde 2019</p>
+        <h1 class="hero-titulo" data-split="words">
+          Compramos por la mañana.<br>
+          <em>La carta se escribe al mediodía.</em>
+        </h1>
+        <p class="hero-sub reveal">
+          Doce mesas, una cocina abierta y lo que el mercado tenga ese día.
+          No hay carta fija porque el pescado no avisa.
+        </p>
+        <div class="hero-acciones reveal">
+          <a class="btn btn-solid" href="#reserva">Reservar mesa</a>
+          <a class="btn btn-linea" href="carta.html">Ver la carta de hoy</a>
+        </div>
+      </div>
+
+      <figure class="hero-figura" data-parallax>
+        <img src="assets/img/mano-masa.webp" width="1000" height="1250"
+             alt="Textura de la sala de Casa Roble" fetchpriority="high" loading="eager">
+        <figcaption>Servicio de mediodía, martes</figcaption>
+      </figure>
+    </div>
+
+    <dl class="hero-meta reveal">
+      <div><dt>Hoy</dt><dd data-hoy>Abierto de 12:00 a 22:30</dd></div>
+      <div><dt>Reservas</dt><dd><a href="tel:+50760000000">+507 6000 0000</a></dd></div>
+      <div><dt>Dónde</dt><dd>Av. Central 118, Casco Antiguo</dd></div>
+    </dl>
+  </section>
+
+  <!-- ===================== MARQUESINA ===================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" data-marquee>
+      <span>Pesca del día</span><span class="marquee-sep">·</span>
+      <span>Brasa de leña</span><span class="marquee-sep">·</span>
+      <span>Huerta de Cerro Punta</span><span class="marquee-sep">·</span>
+      <span>Pan del día</span><span class="marquee-sep">·</span>
+      <span>Café de Boquete</span><span class="marquee-sep">·</span>
+      <span>Doce mesas</span><span class="marquee-sep">·</span>
+    </div>
+  </div>
+
+  <!-- ===================== MANIFIESTO ===================== -->
+  <section class="manifiesto" id="manifiesto">
+    <div class="seccion-cabeza">
+      <span class="num">01</span>
+      <h2 class="seccion-titulo reveal">Una cocina que <em>depende del día</em>.</h2>
+    </div>
+
+    <div class="manifiesto-cuerpo">
+      <div class="manifiesto-texto">
+        <p class="reveal">
+          Casa Roble abrió en 2019 con una idea incómoda para un restaurante:
+          no decidir el menú hasta después de ir al mercado. Lo que llega a la mesa
+          depende de qué había fresco esa mañana y de qué se le ocurrió al equipo
+          mientras lo descargaba.
+        </p>
+        <p class="reveal">
+          Eso significa que hay platos que solo existen una semana al año. También
+          significa que la carta cambia lo suficiente como para que valga la pena
+          volver el mes siguiente.
+        </p>
+        <ul class="manifiesto-lista reveal">
+          <li><span>Producto local</span> Compra directa a nueve productores del interior.</li>
+          <li><span>Brasa</span> Leña de mangle y encino, sin gas.</li>
+          <li><span>Servicio corto</span> Dos turnos por noche, sin prisa dentro de cada uno.</li>
+        </ul>
+      </div>
+
+      <figure class="manifiesto-figura reveal">
+        <img src="assets/img/sala-tarde.webp" width="1400" height="933"
+             alt="Textura de la sala a media tarde" loading="lazy" decoding="async">
+        <figcaption>La sala antes del segundo turno</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== PLATOS ===================== -->
+  <section class="platos" id="platos">
+    <div class="seccion-cabeza">
+      <span class="num">02</span>
+      <h2 class="seccion-titulo reveal">Lo que hay <em>esta semana</em>.</h2>
+      <p class="seccion-nota reveal">
+        Seis de los platos que están saliendo estos días.
+        La carta completa cambia cada martes.
+      </p>
+    </div>
+
+    <div class="platos-mosaico">
+
+      <article class="plato" data-tilt>
+        <div class="plato-foto">
+          <img src="assets/img/plato-1.webp" width="1000" height="1250"
+               alt="Ceviche del día" loading="lazy" decoding="async">
+        </div>
+        <div class="plato-info">
+          <h3>Ceviche del día</h3>
+          <p>Leche de tigre suave, cebolla morada, camote asado.</p>
+          <div class="plato-pie">
+            <span class="plato-precio">$12.50</span>
+            <span class="etiqueta etiqueta-picante">Picante</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="plato" data-tilt>
+        <div class="plato-foto">
+          <img src="assets/img/plato-2.webp" width="1000" height="1250"
+               alt="Arroz cremoso de hongos" loading="lazy" decoding="async">
+        </div>
+        <div class="plato-info">
+          <h3>Arroz cremoso de hongos</h3>
+          <p>Hongos de Boquete, queso curado de cabra, aceite de perejil.</p>
+          <div class="plato-pie">
+            <span class="plato-precio">$19.00</span>
+            <span class="etiqueta etiqueta-veg">Vegetariano</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="plato" data-tilt>
+        <div class="plato-foto">
+          <img src="assets/img/plato-3.webp" width="1000" height="1250"
+               alt="Corvina a la brasa" loading="lazy" decoding="async">
+        </div>
+        <div class="plato-info">
+          <h3>Corvina a la brasa</h3>
+          <p>Envuelta en hoja de plátano, mojo de naranja agria.</p>
+          <div class="plato-pie">
+            <span class="plato-precio">$24.00</span>
+            <span class="etiqueta">Especial</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="plato" data-tilt>
+        <div class="plato-foto">
+          <img src="assets/img/plato-4.webp" width="1000" height="1250"
+               alt="Costilla braseada" loading="lazy" decoding="async">
+        </div>
+        <div class="plato-info">
+          <h3>Costilla braseada</h3>
+          <p>Ocho horas a fuego bajo, puré de ñame, encurtido de cebolla.</p>
+          <div class="plato-pie">
+            <span class="plato-precio">$26.00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="plato" data-tilt>
+        <div class="plato-foto">
+          <img src="assets/img/plato-5.webp" width="1000" height="1250"
+               alt="Yuca frita con alioli" loading="lazy" decoding="async">
+        </div>
+        <div class="plato-info">
+          <h3>Yuca frita, alioli de ajo asado</h3>
+          <p>Para empezar mientras deciden el resto.</p>
+          <div class="plato-pie">
+            <span class="plato-precio">$8.00</span>
+            <span class="etiqueta etiqueta-veg">Vegetariano</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="plato" data-tilt>
+        <div class="plato-foto">
+          <img src="assets/img/plato-6.webp" width="1000" height="1250"
+               alt="Tres leches de maracuyá" loading="lazy" decoding="async">
+        </div>
+        <div class="plato-info">
+          <h3>Tres leches de maracuyá</h3>
+          <p>El postre que nunca hemos podido quitar de la carta.</p>
+          <div class="plato-pie">
+            <span class="plato-precio">$8.00</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="platos-cierre reveal">
+      <a class="btn btn-linea" href="carta.html">Carta completa</a>
+    </p>
+  </section>
+
+  <!-- ===================== QR ===================== -->
+  <section class="qr">
+    <div class="qr-caja">
+      <div class="qr-texto">
+        <span class="num">03</span>
+        <h2 class="seccion-titulo reveal">La carta vive <em>en el teléfono</em>.</h2>
+        <p class="reveal">
+          Cada mesa tiene este código. Se escanea con la cámara y se abre la carta
+          del día, actualizada esa misma mañana. Sin aplicaciones, sin descargas,
+          sin cartas plastificadas que quedan viejas al martes siguiente.
+        </p>
+        <a class="btn btn-linea reveal" href="carta.html">Abrir la carta</a>
+      </div>
+      <figure class="qr-figura reveal">
+        <img src="assets/img/qr-carta.webp" width="900" height="900"
+             alt="Código QR que abre la carta del día" loading="lazy" decoding="async">
+        <figcaption>Escanea para ver la carta</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== VOCES ===================== -->
+  <section class="voces">
+    <div class="seccion-cabeza">
+      <span class="num">04</span>
+      <h2 class="seccion-titulo reveal">Lo que dicen <em>al salir</em>.</h2>
+    </div>
+    <div class="voces-grid">
+      <blockquote class="reveal">
+        <p>Fuimos tres martes seguidos y comimos tres cosas distintas. Ninguna nos decepcionó.</p>
+        <cite>Marcela R.</cite>
+      </blockquote>
+      <blockquote class="reveal">
+        <p>La corvina en hoja de plátano justifica el viaje al Casco por sí sola.</p>
+        <cite>Diego A.</cite>
+      </blockquote>
+      <blockquote class="reveal">
+        <p>Sitio pequeño, servicio que sabe de qué habla. Reserven con tiempo.</p>
+        <cite>Ana L.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===================== VISITA ===================== -->
+  <section class="visita" id="visita">
+    <div class="seccion-cabeza">
+      <span class="num">05</span>
+      <h2 class="seccion-titulo reveal">Visitarnos.</h2>
+    </div>
+
+    <div class="visita-grid">
+      <div class="visita-bloque reveal">
+        <h3>Horarios</h3>
+        <dl class="horarios" data-horarios>
+          <div><dt>Martes a jueves</dt><dd>12:00 – 15:30 · 18:30 – 22:30</dd></div>
+          <div><dt>Viernes y sábado</dt><dd>12:00 – 16:00 · 18:30 – 23:30</dd></div>
+          <div><dt>Domingo</dt><dd>12:00 – 17:00</dd></div>
+          <div><dt>Lunes</dt><dd>Cerrado</dd></div>
+        </dl>
+      </div>
+
+      <div class="visita-bloque reveal">
+        <h3>Dónde estamos</h3>
+        <p class="visita-dir">
+          Av. Central 118<br>
+          Casco Antiguo<br>
+          Ciudad de Panamá
+        </p>
+        <p><a class="enlace-sub" href="#">Abrir en Google Maps</a></p>
+      </div>
+
+      <div class="visita-bloque reveal">
+        <h3>Contacto</h3>
+        <p class="visita-dir">
+          <a href="tel:+50760000000">+507 6000 0000</a><br>
+          <a href="mailto:hola@casaroble.example">hola@casaroble.example</a>
+        </p>
+        <p><a class="enlace-sub" href="#">Escribir por WhatsApp</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESERVA ===================== -->
+  <section class="reserva" id="reserva">
+    <div class="reserva-caja">
+      <div class="reserva-intro">
+        <span class="num">06</span>
+        <h2 class="seccion-titulo reveal">Reservar mesa.</h2>
+        <p class="reveal">
+          Doce mesas se llenan rápido de jueves a sábado. Escríbenos y confirmamos
+          por teléfono en menos de dos horas.
+        </p>
+      </div>
+
+      <form class="reserva-form" data-form novalidate>
+        <div class="campo">
+          <label for="r-nombre">Nombre</label>
+          <input id="r-nombre" name="nombre" type="text" required autocomplete="name" placeholder="Tu nombre">
+        </div>
+        <div class="campo">
+          <label for="r-tel">Teléfono</label>
+          <input id="r-tel" name="telefono" type="tel" required autocomplete="tel" placeholder="+507 …">
+        </div>
+        <div class="campo campo-mitad">
+          <label for="r-fecha">Día</label>
+          <input id="r-fecha" name="fecha" type="date" required>
+        </div>
+        <div class="campo campo-mitad">
+          <label for="r-personas">Personas</label>
+          <select id="r-personas" name="personas">
+            <option>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>Más de 6</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="r-nota">Algo que debamos saber</label>
+          <textarea id="r-nota" name="nota" rows="3" placeholder="Alergias, celebración, silla de bebé…"></textarea>
+        </div>
+        <button class="btn btn-solid btn-ancho" type="submit">Enviar solicitud</button>
+        <p class="form-aviso" data-form-aviso role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="pie-inner">
+    <div class="pie-marca">
+      <span class="nav-logo-mark">CR</span>
+      <p>Casa Roble<br><span>Cocina de mercado · Desde 2019</span></p>
+    </div>
+    <nav class="pie-links" aria-label="Enlaces del pie">
+      <a href="carta.html">Carta</a>
+      <a href="#visita">Horarios</a>
+      <a href="#reserva">Reservas</a>
+      <a href="#">Instagram</a>
+    </nav>
+    <p class="pie-legal">
+      Sitio de demostración. Textos, precios e imágenes son de ejemplo.
+      <span data-anio>2026</span>
+    </p>
+  </div>
+</footer>
+
+<script defer src="lib/gsap.min.js"></script>
+<script defer src="lib/ScrollTrigger.min.js"></script>
+<script defer src="lib/manifest.js?v=20260903"></script>
+<script defer src="main.js?v=20260903"></script>
+</body>
+</html>
