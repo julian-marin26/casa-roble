@@ -60,7 +60,7 @@ manteniendo los mismos nombres. Los tamaños que espera el diseño:
 
 | Archivo | Proporción | Uso |
 |---|---|---|
-| `mano-masa.webp` | 4:5 vertical | Imagen del hero |
+| `hero-sala.webp` | 4:5 vertical | Imagen del hero |
 | `sala-tarde.webp` | 3:2 horizontal | Sección manifiesto |
 | `plato-1` … `plato-6` | 4:5 vertical | Tarjetas de platos |
 | `og-portada.webp` | 1200×630 | Vista previa al compartir en WhatsApp |
@@ -69,6 +69,10 @@ manteniendo los mismos nombres. Los tamaños que espera el diseño:
 El QR actual apunta a una URL de ejemplo. Regenéralo con el dominio real:
 edita la última línea de `tools/generar_placeholders.py` y ejecútalo, o usa
 cualquier generador online.
+
+Para preparar un lote nuevo de fotos, mete los originales en una carpeta y
+ajusta las rutas de `tools/preparar_fotos.py`. Ese script recorta, iguala el
+color entre todas y convierte a WebP de una sola pasada.
 
 **Paso 4 — Los textos.** Están escritos directamente en el HTML, no en JavaScript.
 Búscalos y cámbialos con cualquier editor.
